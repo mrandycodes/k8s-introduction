@@ -101,7 +101,7 @@ $ kubectl apply -f deployment.yml
 $ kubectl apply -f service.yml
 ``````
 
-Test your service with curl or postman but first expose a port in your local machine:
+Test your service with curl or postman <http://localhost:7080/health> but first expose a port in your local machine:
 
 ``````
 $ kubectl port-forward service/demo 7080:80
