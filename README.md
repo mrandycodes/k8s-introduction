@@ -97,6 +97,12 @@ $ docker push myusername/demo
 Finally, use the following command to do your first k8s deployment:
 
 ``````
-$ kubectl apply -f deployment.yaml
-$ kubectl apply -f service.yaml
+$ kubectl apply -f deployment.yml
+$ kubectl apply -f service.yml
+``````
+
+Test your service with curl or postman but first expose a port in your local machine:
+
+``````
+$ kubectl port-forward service/demo 7080:80
 ``````
