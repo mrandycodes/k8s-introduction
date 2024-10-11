@@ -47,8 +47,7 @@ It will open your default browser with the URL of the cluster's dashboard
 The following sequences of command will download the kubectl binary, set the executable flag and copy it to `/usr/local/bin` folder which will make it available in the macOS shell:
 
 ``````
-$ curl -O https://storage.googleapis.com/kubernetes-release/release/v1.5.2
-/bin/darwin/amd64/kubectl
+$ curl -O https://storage.googleapis.com/kubernetes-release/release/v1.27.15/bin/darwin/amd64/kubectl
 $ chmod +x kubectl
 $ sudo cp kubectl /usr/local/bin  
 ``````
